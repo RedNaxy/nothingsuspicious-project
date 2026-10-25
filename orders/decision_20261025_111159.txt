@@ -1,0 +1,31 @@
+Timestamp: 20261025_111159
+Market Regime: Moderate Volatility
+Cash Ratio: 17.04% (NT$ 170,407,761)
+Commentary: Under the Moderate Volatility market regime, we maintain a prudent 15.0% defensive cash reserve while aggressively tilting equity weights toward high-composite-score momentum leaders within the allowable +/-1.0% risk band.
+
+  ticker  lots  shares        price  stock_value_ntd      fee_ntd  actual_weight_pct                                                                               reason
+ 1802.TW   654  654000    67.099998     4.388340e+07 62533.843578           4.388340               Top momentum score reflecting superior price trend and capital inflow.
+3264.TWO   178  178000   246.500000     4.387700e+07 62524.725000           4.387700 Exceptional composite momentum strength warranting the maximum permitted overweight.
+6538.TWO   146  146000   286.000000     4.175600e+07 59502.300000           4.175600           Strong relative performance and robust underlying trend support high tilt.
+3081.TWO    17   17000  2375.000000     4.037500e+07 57534.375000           4.037500                    High-tier momentum score supported by resilient price leadership.
+6274.TWO    28   28000  1420.000000     3.976000e+07 56658.000000           3.976000               Solid multi-factor profile justifying an active overweight allocation.
+ 1301.TW   514  514000    73.800003     3.793320e+07 54054.812235           3.793320                 Above-average composite momentum indicating consistent accumulation.
+ 3037.TW    34   34000  1085.000000     3.689000e+07 52568.250000           3.689000                           Favorable technical structure and positive trend momentum.
+8086.TWO   306  306000   120.500000     3.687300e+07 52544.025000           3.687300                     Steady relative price strength above the portfolio median score.
+ 2383.TW     7    7000  5070.000000     3.549000e+07 50573.250000           3.549000                      Healthy trend momentum metrics warranting a slight active tilt.
+ 1303.TW   119  119000   301.000000     3.581900e+07 51042.075000           3.581900                           Upper-tier composite score showing durable price recovery.
+5274.TWO     2    2000 16010.000000     3.202000e+07 45628.500000           3.202000                         Positive trend score comfortably above the universe average.
+ 2409.TW   959  959000    35.400002     3.394860e+07 48376.757085           3.394860                            Neutral allocation aligned with benchmark base weighting.
+ 2883.TW   899  899000    37.750000     3.393725e+07 48360.581250           3.393725              Maintained at base weight to preserve financial sector diversification.
+ 2454.TW     8    8000  4010.000000     3.208000e+07 45714.000000           3.208000                  Benchmark base weight held for core semiconductor sector stability.
+ 6505.TW   309  309000   106.500000     3.290850e+07 46894.612500           3.290850           Marginal underweight as composite momentum slightly trails top candidates.
+3105.TWO    63   63000   486.000000     3.061800e+07 43630.650000           3.061800                       Moderate underweight due to slowing short-term price momentum.
+3693.TWO    47   47000   647.000000     3.040900e+07 43332.825000           3.040900          Sub-median factor score prompting light reduction to fund top-ranked names.
+ 2059.TW     3    3000  9755.000000     2.926500e+07 41702.625000           2.926500                     Below-average trend momentum requires defensive weight trimming.
+3558.TWO   217  217000   138.000000     2.994600e+07 42673.050000           2.994600            Softening trend metrics justify lower exposure under moderate volatility.
+ 3443.TW     3    3000  7585.000000     2.275500e+07 32425.875000           2.275500                  Relatively subdued composite score prompting active underweighting.
+ 2360.TW    13   13000  1980.000000     2.574000e+07 36679.500000           2.574000                         Lagging momentum metrics warrant significant tilt reduction.
+ 2885.TW   372  372000    72.400002     2.693280e+07 38379.240809           2.693280          Low composite trend strength requires scaling back to manage downside risk.
+ 2368.TW    23   23000  1115.000000     2.564500e+07 36544.125000           2.564500           Weak momentum relative to portfolio peers justifies defensive underweight.
+ 2345.TW    14   14000  1775.000000     2.485000e+07 35411.250000           2.485000            Bottom-quintile momentum score necessitating maximum practical reduction.
+ 3008.TW     4    4000  6175.000000     2.470000e+07 35197.500000           2.470000         Lowest composite score in the basket requiring disciplined underweight tilt.
