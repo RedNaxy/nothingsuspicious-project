@@ -1,0 +1,29 @@
+Regime: Moderate Volatility
+Commentary: Under the Moderate Volatility market regime, the portfolio maintains a mandatory 15.0% cash buffer while utilizing TSMC (2330.TW) as the primary macro liquidity anchor at 16.0%, dynamically tilting remaining holdings according to multi-factor momentum and composite scores.
+
+  ticker  lots  shares    est_price  allocated_ntd  weight_pct                                                                                                            reason
+ 2330.TW    67   67000  2385.000000   1.597950e+08    15.97950             Acts as the macro liquidity anchor under moderate volatility regime while displaying strong momentum.
+ 3037.TW    35   35000  1085.000000   3.797500e+07     3.79750                   Highest composite score driven by robust operational momentum in advanced packaging substrates.
+ 1303.TW   122  122000   301.000000   3.672200e+07     3.67220                                            Strong turnaround composite score warranting an overweight allocation.
+ 2454.TW     8    8000  4010.000000   3.208000e+07     3.20800                                       Solid factor strength in edge AI and flagship smartphone SoC design cycles.
+6274.TWO    23   23000  1420.000000   3.266000e+07     3.26600                               Maintained at neutral base weight supported by stable semiconductor testing demand.
+ 3711.TW    50   50000   654.000000   3.270000e+07     3.27000 Slight underweight relative to top momentum tier due to broader capital reallocation toward the liquidity anchor.
+5274.TWO     1    1000 16010.000000   1.601000e+07     1.60100                             High composite score adjusted down slightly to finance portfolio-wide risk budgeting.
+ 3017.TW     9    9000  3145.000000   2.830500e+07     2.83050                                  Positive composite score in thermal solutions tempered by moderate risk scaling.
+ 2308.TW    19   19000  1560.000000   2.964000e+07     2.96400                             Healthy power management factor profile scaled down to accommodate cash requirements.
+6488.TWO    35   35000   826.000000   2.891000e+07     2.89100                                           Mildly positive score balanced against cyclical wafer market headwinds.
+ 2891.TW   387  387000    74.900002   2.898630e+07     2.89863                  Resilient banking profitability providing financial sector balance at a slight discount to base.
+ 2881.TW   176  176000   158.500000   2.789600e+07     2.78960                                   Flat composite score leading to a defensive tilt within the financial holdings.
+ 2882.TW   246  246000   113.500000   2.792100e+07     2.79210                                         Mild negative momentum warrants a calibrated reduction below base weight.
+ 2449.TW   106  106000   262.500000   2.782500e+07     2.78250                                                Underweight tilt due to soft backend assembly momentum indicators.
+ 6669.TW    14   14000  1840.000000   2.576000e+07     2.57600                         Negative composite score prompts an underweight posture despite high nominal share price.
+ 3665.TW    14   14000  1875.000000   2.625000e+07     2.62500                                          Subdued momentum score justifies a controlled trim to control beta risk.
+ 1301.TW   352  352000    73.800003   2.597760e+07     2.59776                                        Commodity chemical margin compression reflected in weak composite factors.
+ 2317.TW   106  106000   245.000000   2.597000e+07     2.59700                  Lagging composite score requires an underweight allocation to preserve portfolio trend strength.
+ 2892.TW   590  590000    42.349998   2.498650e+07     2.49865                                   Weak momentum relative to financial sector peers necessitates a defensive trim.
+ 2884.TW   502  502000    49.750000   2.497450e+07     2.49745                                      Persistently negative composite ranking drives reduced portfolio allocation.
+ 2301.TW    97   97000   255.500000   2.478350e+07     2.47835                                              Unfavorable technical trend factors warrant an underweight position.
+3324.TWO    17   17000  1360.000000   2.312000e+07     2.31200                           Constrained to allowable lower bound due to deteriorated short-term composite momentum.
+ 3231.TW   126  126000   190.000000   2.394000e+07     2.39400                               Subdued factor readings in ODM sector dictate allocation at minimum allowable band.
+ 2379.TW    31   31000   772.000000   2.393200e+07     2.39320                             Weak relative strength and low composite score place this position at minimum weight.
+ 2603.TW    92   92000   260.000000   2.392000e+07     2.39200                                    Lowest composite score among candidates requires minimum allowable allocation.
