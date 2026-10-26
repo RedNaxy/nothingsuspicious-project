@@ -9,8 +9,8 @@
       "authority": "twse",
       "name": "TWSE / TPEx 官方盤後資訊：150 檔候選股日收盤價量與三大法人買賣超",
       "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
-      "content_as_of": "2026-10-25T12:22:01+08:00",
-      "fetched_at": "2026-10-25T12:22:01+08:00"
+      "content_as_of": "2026-10-26T14:22:38+08:00",
+      "fetched_at": "2026-10-26T14:22:38+08:00"
     }
   ],
   "observations": [
@@ -502,8 +502,8 @@
   "agent_metadata": {
     "model_provider": "google",
     "model_version": "gemini-3.8-flash",
-    "run_started_at": "2026-10-25T12:22:01+08:00",
-    "run_completed_at": "2026-10-25T12:22:01+08:00",
+    "run_started_at": "2026-10-26T14:22:38+08:00",
+    "run_completed_at": "2026-10-26T14:22:38+08:00",
     "code_version": "git:852ecb8"
   }
 }
