@@ -9,8 +9,8 @@
       "authority": "twse",
       "name": "TWSE / TPEx 官方盤後資訊：150 檔候選股日收盤價量與三大法人買賣超",
       "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
-      "content_as_of": "2026-10-26T14:22:38+08:00",
-      "fetched_at": "2026-10-26T14:22:38+08:00"
+      "content_as_of": "2026-10-26T14:41:58+08:00",
+      "fetched_at": "2026-10-26T14:41:58+08:00"
     }
   ],
   "observations": [
@@ -20,10 +20,10 @@
         "S1"
       ],
       "topic": "market_volatility",
-      "statement": "TAIEX 20日年化波動度換算為 29.31%，落在中波動配置區間 (15% < vol <= 22%)",
+      "statement": "TAIEX 年化波動度換算為 29.31%，落在高波動防禦區間 (vol > 22%)",
       "values": {
         "taiex_vol_ann": 29.31,
-        "target_cash_pct": 17.26
+        "target_cash_pct": 19.62
       }
     },
     {
@@ -43,14 +43,14 @@
     "basis_refs": [
       "O1"
     ],
-    "logic": "大盤年化波動度為 29.31%，處於中波動區間，啟動防禦預警機制，維持 15% 至 20% 現金水位",
-    "regime": "neutral",
+    "logic": "大盤年化波動度為 29.31%，處於高波動防禦區間 (vol > 22%)，啟動防禦預警機制，維持 15% 至 25% 現金水位",
+    "regime": "bear",
     "stance": "defensive",
     "posture": {
       "net_exposure_intent": "increase",
       "target_cash_pct_range": [
         0.15,
-        0.2
+        0.25
       ]
     },
     "counter_evidence": null,
@@ -63,7 +63,7 @@
         "O1",
         "O2"
       ],
-      "logic": "建倉以 25 檔強勢動能與法人青睞個股為核心，採等權重分散配置並保留約 17.26% 現金防禦",
+      "logic": "建倉以 25 檔強勢動能與法人青睞個股為核心，採等權重分散配置並保留約 19.62% 現金防禦",
       "conclusion": "建構 25 檔多因子強勢組合，符合整股 1,000 股限制與單一持股不超過 10% 上限",
       "counter_evidence": null,
       "confidence": 0.88
@@ -502,8 +502,8 @@
   "agent_metadata": {
     "model_provider": "google",
     "model_version": "gemini-3.8-flash",
-    "run_started_at": "2026-10-26T14:22:38+08:00",
-    "run_completed_at": "2026-10-26T14:22:38+08:00",
+    "run_started_at": "2026-10-26T14:41:58+08:00",
+    "run_completed_at": "2026-10-26T14:41:58+08:00",
     "code_version": "git:852ecb8"
   }
 }
