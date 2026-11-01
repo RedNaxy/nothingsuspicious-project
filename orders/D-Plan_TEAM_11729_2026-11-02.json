@@ -9,8 +9,8 @@
       "authority": "twse",
       "name": "TWSE / TPEx 官方盤後資訊：150 檔候選股日收盤價量與三大法人買賣超",
       "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
-      "content_as_of": "2026-10-30T18:56:24+08:00",
-      "fetched_at": "2026-10-30T18:56:24+08:00"
+      "content_as_of": "2026-11-01T18:01:07+08:00",
+      "fetched_at": "2026-11-01T18:01:07+08:00"
     }
   ],
   "observations": [
@@ -43,11 +43,11 @@
     "basis_refs": [
       "O1"
     ],
-    "logic": "大盤年化波動度為 29.71%，處於高波動防禦區間 (vol > 22%)，維持中性再平衡部位 (預估淨流向 NT$11,023,100)，維持 15% 至 25% 現金水位",
+    "logic": "大盤年化波動度為 29.71%，處於高波動防禦區間 (vol > 22%)，積極加碼部位提升曝險 (預估淨流入 NT$24,411,800)，維持 15% 至 25% 現金水位",
     "regime": "risk_off",
     "stance": "defensive",
     "posture": {
-      "net_exposure_intent": "hold",
+      "net_exposure_intent": "increase",
       "target_cash_pct_range": [
         0.15,
         0.25
@@ -79,16 +79,6 @@
   "decisions": [
     {
       "decision_id": "D1",
-      "ticker": "1303",
-      "action": "TRIM",
-      "target_weight": 0.0404,
-      "inference_refs": [
-        "I1"
-      ],
-      "risk_check": "調節至目標權重 4.04%"
-    },
-    {
-      "decision_id": "D2",
       "ticker": "2059",
       "action": "SELL_ALL",
       "target_weight": 0.0,
@@ -98,7 +88,7 @@
       "risk_check": "動能評分減弱或避開主動ETF重疊風險，出清部位"
     },
     {
-      "decision_id": "D3",
+      "decision_id": "D2",
       "ticker": "2303",
       "action": "ADD",
       "target_weight": 0.0293,
@@ -108,7 +98,7 @@
       "risk_check": "加碼至目標權重 2.93% <= 10%"
     },
     {
-      "decision_id": "D4",
+      "decision_id": "D3",
       "ticker": "2883",
       "action": "TRIM",
       "target_weight": 0.0365,
@@ -118,7 +108,7 @@
       "risk_check": "調節至目標權重 3.65%"
     },
     {
-      "decision_id": "D5",
+      "decision_id": "D4",
       "ticker": "2885",
       "action": "TRIM",
       "target_weight": 0.0305,
@@ -128,7 +118,7 @@
       "risk_check": "調節至目標權重 3.05%"
     },
     {
-      "decision_id": "D6",
+      "decision_id": "D5",
       "ticker": "2887",
       "action": "TRIM",
       "target_weight": 0.0321,
@@ -136,6 +126,16 @@
         "I1"
       ],
       "risk_check": "調節至目標權重 3.21%"
+    },
+    {
+      "decision_id": "D6",
+      "ticker": "3037",
+      "action": "ADD",
+      "target_weight": 0.0439,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "加碼至目標權重 4.39% <= 10%"
     },
     {
       "decision_id": "D7",
@@ -220,6 +220,13 @@
   ],
   "no_trade_decisions": [
     {
+      "ticker": "1303",
+      "reason_refs": [
+        "I1"
+      ],
+      "reason": "維持部位在目標容許區間內續抱"
+    },
+    {
       "ticker": "2383",
       "reason_refs": [
         "I1"
@@ -235,13 +242,6 @@
     },
     {
       "ticker": "2454",
-      "reason_refs": [
-        "I1"
-      ],
-      "reason": "維持部位在目標容許區間內續抱"
-    },
-    {
-      "ticker": "3037",
       "reason_refs": [
         "I1"
       ],
@@ -313,46 +313,46 @@
   ],
   "orders": [
     {
-      "ticker": "1303",
-      "side": "SELL",
-      "shares": 7000,
-      "decision_ref": "D1",
-      "derivation_detail": "target_shares = 125,000 (trim 7,000)"
-    },
-    {
       "ticker": "2059",
       "side": "SELL",
       "shares": 2000,
-      "decision_ref": "D2",
+      "decision_ref": "D1",
       "derivation_detail": "target_shares = 0 (sell all 2,000 shares)"
     },
     {
       "ticker": "2303",
       "side": "BUY",
-      "shares": 6000,
-      "decision_ref": "D3",
-      "derivation_detail": "target_shares = 246,000 (add 6,000)"
+      "shares": 14000,
+      "decision_ref": "D2",
+      "derivation_detail": "target_shares = 254,000 (add 14,000)"
     },
     {
       "ticker": "2883",
       "side": "SELL",
-      "shares": 44000,
-      "decision_ref": "D4",
-      "derivation_detail": "target_shares = 919,000 (trim 44,000)"
+      "shares": 27000,
+      "decision_ref": "D3",
+      "derivation_detail": "target_shares = 936,000 (trim 27,000)"
     },
     {
       "ticker": "2885",
       "side": "SELL",
-      "shares": 38000,
-      "decision_ref": "D5",
-      "derivation_detail": "target_shares = 403,000 (trim 38,000)"
+      "shares": 34000,
+      "decision_ref": "D4",
+      "derivation_detail": "target_shares = 407,000 (trim 34,000)"
     },
     {
       "ticker": "2887",
       "side": "SELL",
-      "shares": 34000,
+      "shares": 31000,
+      "decision_ref": "D5",
+      "derivation_detail": "target_shares = 737,000 (trim 31,000)"
+    },
+    {
+      "ticker": "3037",
+      "side": "BUY",
+      "shares": 3000,
       "decision_ref": "D6",
-      "derivation_detail": "target_shares = 734,000 (trim 34,000)"
+      "derivation_detail": "target_shares = 43,000 (add 3,000)"
     },
     {
       "ticker": "3105",
@@ -364,16 +364,16 @@
     {
       "ticker": "3189",
       "side": "BUY",
-      "shares": 2000,
+      "shares": 3000,
       "decision_ref": "D8",
-      "derivation_detail": "target_shares = 44,000 (add 2,000)"
+      "derivation_detail": "target_shares = 45,000 (add 3,000)"
     },
     {
       "ticker": "3481",
       "side": "BUY",
-      "shares": 60000,
+      "shares": 117000,
       "decision_ref": "D9",
-      "derivation_detail": "target_shares = 693,000 (add 60,000)"
+      "derivation_detail": "target_shares = 750,000 (add 117,000)"
     },
     {
       "ticker": "3653",
@@ -392,30 +392,30 @@
     {
       "ticker": "8046",
       "side": "BUY",
-      "shares": 3000,
+      "shares": 5000,
       "decision_ref": "D12",
-      "derivation_detail": "target_shares = 28,000 (add 3,000)"
+      "derivation_detail": "target_shares = 30,000 (add 5,000)"
     },
     {
       "ticker": "6446",
       "side": "BUY",
-      "shares": 19000,
+      "shares": 20000,
       "decision_ref": "D13",
-      "derivation_detail": "target_shares = 19,000 shares"
+      "derivation_detail": "target_shares = 20,000 shares"
     },
     {
       "ticker": "2890",
       "side": "BUY",
-      "shares": 476000,
+      "shares": 475000,
       "decision_ref": "D14",
-      "derivation_detail": "target_shares = 476,000 shares"
+      "derivation_detail": "target_shares = 475,000 shares"
     }
   ],
   "agent_metadata": {
     "model_provider": "google",
     "model_version": "gemini-3.8-flash",
-    "run_started_at": "2026-10-30T18:56:24+08:00",
-    "run_completed_at": "2026-10-30T18:56:24+08:00",
+    "run_started_at": "2026-11-01T18:01:07+08:00",
+    "run_completed_at": "2026-11-01T18:01:07+08:00",
     "code_version": "git:852ecb8"
   }
 }
