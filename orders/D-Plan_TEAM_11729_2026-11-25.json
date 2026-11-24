@@ -1,0 +1,477 @@
+{
+  "schema_version": "4.3",
+  "doc_type": "D-Plan",
+  "team_id": "TEAM_11729",
+  "trade_date": "2026-11-25",
+  "sources": [
+    {
+      "source_id": "S1",
+      "authority": "twse",
+      "name": "TWSE / TPEx 官方盤後資訊：150 檔候選股日收盤價量與三大法人買賣超",
+      "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
+      "content_as_of": "2026-11-24T22:10:36+08:00",
+      "fetched_at": "2026-11-24T22:10:36+08:00"
+    }
+  ],
+  "observations": [
+    {
+      "obs_id": "O1",
+      "source_ref": [
+        "S1"
+      ],
+      "topic": "market_volatility",
+      "statement": "TAIEX 年化波動度換算為 35.03%，落在高波動防禦區間 (vol > 22%)",
+      "values": {
+        "taiex_vol_ann": 35.03,
+        "target_cash_pct": 16.0
+      }
+    },
+    {
+      "obs_id": "O2",
+      "source_ref": [
+        "S1"
+      ],
+      "topic": "universe_ranking",
+      "statement": "綜合多因子排序與 Rule §VI.13 主動投資比率檢核 (Min Active Share: 46.91% >= 20%)",
+      "values": {
+        "candidate_count": 25,
+        "min_active_share_pct": 46.91
+      }
+    }
+  ],
+  "market_view": {
+    "basis_refs": [
+      "O1"
+    ],
+    "logic": "大盤年化波動度為 35.03%，處於高波動防禦區間 (vol > 22%)，調節持股釋出流動性 (預估淨流出 NT$16,984,850)，維持 15% 至 25% 現金水位",
+    "regime": "risk_off",
+    "stance": "defensive",
+    "posture": {
+      "net_exposure_intent": "reduce",
+      "target_cash_pct_range": [
+        0.15,
+        0.25
+      ]
+    },
+    "counter_evidence": null,
+    "confidence": 0.85
+  },
+  "inferences": [
+    {
+      "inf_id": "I1",
+      "premise_refs": [
+        "O1",
+        "O2"
+      ],
+      "logic": "既有強勢持股維持無交易帶續抱，前 15 大持股 Active Share (46.91%) 嚴格符合大於 15% 防抄襲規範與 10% 個股上限",
+      "counter_evidence": null
+    },
+    {
+      "inf_id": "I2",
+      "premise_refs": [
+        "O1",
+        "O2"
+      ],
+      "logic": "動能評分減弱或避開主動ETF重疊風險，依風控紀律出清持股釋出資金",
+      "counter_evidence": null
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "D1",
+      "ticker": "1303",
+      "action": "TRIM",
+      "target_weight": 0.041,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 4.10%"
+    },
+    {
+      "decision_id": "D2",
+      "ticker": "2395",
+      "action": "TRIM",
+      "target_weight": 0.0344,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 3.44%"
+    },
+    {
+      "decision_id": "D3",
+      "ticker": "2412",
+      "action": "ADD",
+      "target_weight": 0.0251,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "加碼至目標權重 2.51% <= 10%"
+    },
+    {
+      "decision_id": "D4",
+      "ticker": "2801",
+      "action": "ADD",
+      "target_weight": 0.0334,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "加碼至目標權重 3.34% <= 10%"
+    },
+    {
+      "decision_id": "D5",
+      "ticker": "2880",
+      "action": "TRIM",
+      "target_weight": 0.0297,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 2.97%"
+    },
+    {
+      "decision_id": "D6",
+      "ticker": "2881",
+      "action": "TRIM",
+      "target_weight": 0.0311,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 3.11%"
+    },
+    {
+      "decision_id": "D7",
+      "ticker": "2882",
+      "action": "TRIM",
+      "target_weight": 0.0273,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 2.73%"
+    },
+    {
+      "decision_id": "D8",
+      "ticker": "2883",
+      "action": "TRIM",
+      "target_weight": 0.0385,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 3.85%"
+    },
+    {
+      "decision_id": "D9",
+      "ticker": "2884",
+      "action": "TRIM",
+      "target_weight": 0.0326,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 3.26%"
+    },
+    {
+      "decision_id": "D10",
+      "ticker": "2885",
+      "action": "ADD",
+      "target_weight": 0.0363,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "加碼至目標權重 3.63% <= 10%"
+    },
+    {
+      "decision_id": "D11",
+      "ticker": "2886",
+      "action": "TRIM",
+      "target_weight": 0.0231,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 2.31%"
+    },
+    {
+      "decision_id": "D12",
+      "ticker": "2887",
+      "action": "TRIM",
+      "target_weight": 0.0375,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 3.75%"
+    },
+    {
+      "decision_id": "D13",
+      "ticker": "2890",
+      "action": "TRIM",
+      "target_weight": 0.0325,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 3.25%"
+    },
+    {
+      "decision_id": "D14",
+      "ticker": "2891",
+      "action": "TRIM",
+      "target_weight": 0.0294,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 2.94%"
+    },
+    {
+      "decision_id": "D15",
+      "ticker": "2892",
+      "action": "ADD",
+      "target_weight": 0.031,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "加碼至目標權重 3.10% <= 10%"
+    },
+    {
+      "decision_id": "D16",
+      "ticker": "3037",
+      "action": "TRIM",
+      "target_weight": 0.0446,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 4.46%"
+    },
+    {
+      "decision_id": "D17",
+      "ticker": "3045",
+      "action": "ADD",
+      "target_weight": 0.0253,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "加碼至目標權重 2.53% <= 10%"
+    },
+    {
+      "decision_id": "D18",
+      "ticker": "3189",
+      "action": "TRIM",
+      "target_weight": 0.0446,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 4.46%"
+    },
+    {
+      "decision_id": "D19",
+      "ticker": "4958",
+      "action": "TRIM",
+      "target_weight": 0.0344,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 3.44%"
+    },
+    {
+      "decision_id": "D20",
+      "ticker": "5876",
+      "action": "TRIM",
+      "target_weight": 0.026,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 2.60%"
+    },
+    {
+      "decision_id": "D21",
+      "ticker": "8046",
+      "action": "TRIM",
+      "target_weight": 0.0404,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "調節至目標權重 4.04%"
+    }
+  ],
+  "no_trade_decisions": [
+    {
+      "ticker": "2330",
+      "reason_refs": [
+        "I1"
+      ],
+      "reason": "維持部位在目標容許區間內續抱"
+    },
+    {
+      "ticker": "2383",
+      "reason_refs": [
+        "I1"
+      ],
+      "reason": "維持部位在目標容許區間內續抱"
+    },
+    {
+      "ticker": "2454",
+      "reason_refs": [
+        "I1"
+      ],
+      "reason": "維持部位在目標容許區間內續抱"
+    },
+    {
+      "ticker": "3081",
+      "reason_refs": [
+        "I1"
+      ],
+      "reason": "維持部位在目標容許區間內續抱"
+    }
+  ],
+  "orders": [
+    {
+      "ticker": "1303",
+      "side": "SELL",
+      "shares": 11000,
+      "decision_ref": "D1",
+      "derivation_detail": "target_shares = 128,000 (trim 11,000)"
+    },
+    {
+      "ticker": "2395",
+      "side": "SELL",
+      "shares": 2000,
+      "decision_ref": "D2",
+      "derivation_detail": "target_shares = 45,000 (trim 2,000)"
+    },
+    {
+      "ticker": "2412",
+      "side": "BUY",
+      "shares": 7000,
+      "decision_ref": "D3",
+      "derivation_detail": "target_shares = 119,000 (add 7,000)"
+    },
+    {
+      "ticker": "2801",
+      "side": "BUY",
+      "shares": 18000,
+      "decision_ref": "D4",
+      "derivation_detail": "target_shares = 975,000 (add 18,000)"
+    },
+    {
+      "ticker": "2880",
+      "side": "SELL",
+      "shares": 23000,
+      "decision_ref": "D5",
+      "derivation_detail": "target_shares = 489,000 (trim 23,000)"
+    },
+    {
+      "ticker": "2881",
+      "side": "SELL",
+      "shares": 6000,
+      "decision_ref": "D6",
+      "derivation_detail": "target_shares = 169,000 (trim 6,000)"
+    },
+    {
+      "ticker": "2882",
+      "side": "SELL",
+      "shares": 8000,
+      "decision_ref": "D7",
+      "derivation_detail": "target_shares = 204,000 (trim 8,000)"
+    },
+    {
+      "ticker": "2883",
+      "side": "SELL",
+      "shares": 28000,
+      "decision_ref": "D8",
+      "derivation_detail": "target_shares = 934,000 (trim 28,000)"
+    },
+    {
+      "ticker": "2884",
+      "side": "SELL",
+      "shares": 19000,
+      "decision_ref": "D9",
+      "derivation_detail": "target_shares = 619,000 (trim 19,000)"
+    },
+    {
+      "ticker": "2885",
+      "side": "BUY",
+      "shares": 7000,
+      "decision_ref": "D10",
+      "derivation_detail": "target_shares = 442,000 (add 7,000)"
+    },
+    {
+      "ticker": "2886",
+      "side": "SELL",
+      "shares": 46000,
+      "decision_ref": "D11",
+      "derivation_detail": "target_shares = 328,000 (trim 46,000)"
+    },
+    {
+      "ticker": "2887",
+      "side": "SELL",
+      "shares": 32000,
+      "decision_ref": "D12",
+      "derivation_detail": "target_shares = 808,000 (trim 32,000)"
+    },
+    {
+      "ticker": "2890",
+      "side": "SELL",
+      "shares": 27000,
+      "decision_ref": "D13",
+      "derivation_detail": "target_shares = 630,000 (trim 27,000)"
+    },
+    {
+      "ticker": "2891",
+      "side": "SELL",
+      "shares": 15000,
+      "decision_ref": "D14",
+      "derivation_detail": "target_shares = 329,000 (trim 15,000)"
+    },
+    {
+      "ticker": "2892",
+      "side": "BUY",
+      "shares": 32000,
+      "decision_ref": "D15",
+      "derivation_detail": "target_shares = 609,000 (add 32,000)"
+    },
+    {
+      "ticker": "3037",
+      "side": "SELL",
+      "shares": 3000,
+      "decision_ref": "D16",
+      "derivation_detail": "target_shares = 56,000 (trim 3,000)"
+    },
+    {
+      "ticker": "3045",
+      "side": "BUY",
+      "shares": 19000,
+      "decision_ref": "D17",
+      "derivation_detail": "target_shares = 157,000 (add 19,000)"
+    },
+    {
+      "ticker": "3189",
+      "side": "SELL",
+      "shares": 3000,
+      "decision_ref": "D18",
+      "derivation_detail": "target_shares = 67,000 (trim 3,000)"
+    },
+    {
+      "ticker": "4958",
+      "side": "SELL",
+      "shares": 9000,
+      "decision_ref": "D19",
+      "derivation_detail": "target_shares = 73,000 (trim 9,000)"
+    },
+    {
+      "ticker": "5876",
+      "side": "SELL",
+      "shares": 7000,
+      "decision_ref": "D20",
+      "derivation_detail": "target_shares = 386,000 (trim 7,000)"
+    },
+    {
+      "ticker": "8046",
+      "side": "SELL",
+      "shares": 2000,
+      "decision_ref": "D21",
+      "derivation_detail": "target_shares = 42,000 (trim 2,000)"
+    }
+  ],
+  "agent_metadata": {
+    "model_provider": "google",
+    "model_version": "gemini-3.8-flash",
+    "run_started_at": "2026-11-24T22:10:36+08:00",
+    "run_completed_at": "2026-11-24T22:10:36+08:00",
+    "code_version": "git:852ecb8-p9"
+  }
+}
